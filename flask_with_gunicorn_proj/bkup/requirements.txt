@@ -118,7 +118,7 @@ pytest-cover==3.0.0
 pytest-coverage==0.0
 python-dateutil==2.7.5
 python-dotenv==0.10.1
-python-gnupg==0.4.3
+python-gnupg==0.4.4
 python-hglib==2.6.1
 python-owasp-zap-v2.4==0.0.14
 pytz==2018.7
