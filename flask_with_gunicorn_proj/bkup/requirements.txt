@@ -122,7 +122,7 @@ python-gnupg==0.4.3
 python-hglib==2.6.1
 python-owasp-zap-v2.4==0.0.14
 pytz==2018.7
-PyYAML==3.13
+PyYAML==5.1
 readme-renderer==24.0
 redis==3.0.1
 repo==0.1.0
