@@ -31,7 +31,7 @@ vine==1.1.4
 virtualenv==16.0.0
 virtualenv-clone==0.4.0
 webencodings==0.5.1
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 wrapt==1.10.11
 xlrd==1.2.0
 yapf==0.25.0
