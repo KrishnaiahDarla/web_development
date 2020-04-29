@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: flask-web-app
+Version: 0+unknown
+Summary: package that can be installed with pip.
+Home-page: https://zxgit.zetaglobal.io/data-cloud/dc-activity-service.git
+Author: Krishnaiah Darla
+Author-email: darla.krishna@gmail.com
+License: BSD
+Description: Quality Score FlaskWeb App Readme
+        
+        This project is intended to provide insight in the Flask Web App
+        
+        Enjoy
+        
+        @author: krishnaiah darla 
+        @email: darla.krishna@gmail.com
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3

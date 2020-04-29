@@ -1,0 +1,39 @@
+DC_LOCALIZE={{DC_LOCALIZE}}
+DC_ENVIRONMENT={{DC_ENVIRONMENT}}
+DC_CONTEXT={{DC_CONTEXT}}
+DC_DOCKER_HOSTNAME={{DC_DOCKER_HOSTNAME}}
+DC_DOCKER_HOST={{DC_DOCKER_HOST}}
+DOTENV_FILEPATH=/app/.env
+AWS_PROFILE=datacloud
+DOTENV_FILEPATH=/app/.env
+PYTHON_VERSION=3.6.8
+
+0 1 * * * /usr/local/bin/python -m activity_service.cli.s3.zh20_monitor >> /logs/zh20_monitor.log 2>&1
+0 1 * * * /usr/local/bin/python -m activity_service.cli.sftp.impact_monitor >> /logs/impact_monitor.log 2>&1
+0 1 * * * /usr/local/bin/python -m activity_service.cli.sftp.pc7_monitor >> /logs/pc7_monitor.log 2>&1
+0 1 * * * /usr/local/bin/python -m activity_service.cli.s3.greenoffer_monitor >> /logs/greenoffer_monitor.log 2>&1
+0 1 * * * /usr/local/bin/python -m activity_service.cli.s3.orangeoffer_monitor >> /logs/orangeoffer_monitor.log 2>&1
+0 1 * * * /usr/local/bin/python -m activity_service.cli.s3.unsubcentral_monitor >> /logs/unsubcentral_monitor.log 2>&1
+0 1 * * * /usr/local/bin/python -m activity_service.cli.sftp.zh10_monitor >> /logs/zh10_monitor.log 2>&1
+0 1 * * * /usr/local/bin/python -m activity_service.cli.sftp.zh18_monitor >> /logs/zh18_monitor.log 2>&1
+0 1 * * * /usr/local/bin/python -m activity_service.cli.sftp.towerdata_orange_monitor >> /logs/towerdata_orange_monitor.log 2>&1
+0 1 * * * /usr/local/bin/python -m activity_service.cli.sftp.towerdata_green_monitor >> /logs/towerdata_green_monitor.log 2>&1
+#0 1 * * * /usr/local/bin/python -m activity_service.cli.s3.programmatic_monitor >> /logs/programmatic_monitor.log 2>&1
+0 1 * * * /usr/local/bin/python -m activity_service.cli.sftp.orangefirstparty_monitor >> /logs/orangefirstparty_monitor.log 2>&1
+
+30 1 * * * /usr/local/bin/python -m activity_service.cli.s3.zh20_processor >> /logs/zh20_processor.log 2>&1
+0 2 * * * /usr/local/bin/python -m activity_service.cli.sftp.impact_processor >> /logs/impact_processor.log 2>&1
+30 2 * * * /usr/local/bin/python -m activity_service.cli.sftp.pc7_processor >> /logs/pc7_processor.log 2>&1
+0 3 * * * /usr/local/bin/python -m activity_service.cli.s3.greenoffer_processor >> /logs/greenoffer_processor.log 2>&1
+30 3 * * * /usr/local/bin/python -m activity_service.cli.s3.orangeoffer_processor >> /logs/orangeoffer_processor.log 2>&1
+0 4 * * * /usr/local/bin/python -m activity_service.cli.s3.unsubcentral_processor >> /logs/unsubcentral_processor.log 2>&1
+30 4 * * * /usr/local/bin/python -m activity_service.cli.sftp.zh10_processor >> /logs/zh10_processor.log 2>&1
+0 5 * * * /usr/local/bin/python -m activity_service.cli.sftp.zh18_processor >> /logs/zh18_processor.log 2>&1
+30 5 * * * /usr/local/bin/python -m activity_service.cli.sftp.towerdata_orange_processor >> /logs/towerdata_orange_processor.log 2>&1
+0 6 * * * /usr/local/bin/python -m activity_service.cli.sftp.towerdata_green_processor >> /logs/towerdata_green_processor.log 2>&1
+00 10 * * * /usr/local/bin/python -m activity_service.cli.sftp.orangefirstparty_processor >> /logs/orangefirstparty_processor.log 2>&1
+#0 7 * * * /usr/local/bin/python -m activity_service.cli.s3.programmatic_processor >> /logs/programmatic_processor.log 2>&1
+0 22 * * * /usr/local/bin/python -m activity_service.job.monitor.alert.mockingbird_processing_exception_alert >> /logs/mockingbird_processing_exception_alert.log 2>&1
+0 22 * * * /usr/local/bin/python -m activity_service.job.monitor.alert.mockingbird_file_activity_alert >> /logs/mockingbird_file_activity_alert.log 2>&1
+
+0 15 * * * /usr/local/bin/python -m activity_service.cli.backup-files-to-s3 >> /logs/backup.log 2>&1

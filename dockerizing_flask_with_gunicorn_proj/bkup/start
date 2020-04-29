@@ -1,0 +1,7 @@
+#!/bin/sh
+
+export CPU_COUNT=`cat /proc/cpuinfo | grep "^processor" | wc -l`
+j2 -f env /tmp/root-crontab > /var/spool/cron/crontabs/root
+j2 -f env /tmp/lighttpd.conf > /etc/lighttpd/lighttpd.conf
+chmod 0600 /var/spool/cron/crontabs/root
+exec supervisord -n -c /etc/supervisor/supervisord.conf

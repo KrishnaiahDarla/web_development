@@ -1,0 +1,20 @@
+[distutils]
+index-servers =
+  dc
+  dc-dev
+  local
+
+[dc]
+repository=http://prod-zync-docker01.zx:8080
+username=publish
+password=VI2iB$7#Ws
+
+[dc-dev]
+repository=http://dev-docker01.zx:1234
+username=publish
+password=VI2iB$7#Ws
+
+[local]
+repository=http://localhost:8080
+username=publish
+password=VI2iB$7#Ws
