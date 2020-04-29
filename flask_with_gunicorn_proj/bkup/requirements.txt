@@ -13,7 +13,7 @@ bcrypt==3.1.4
 beautifulsoup4==4.7.0
 billiard==3.5.0.4
 bitarray==0.8.3
-bleach==3.0.2
+bleach==3.1.4
 boto==2.49.0
 boto3==1.9.131
 botocore==1.12.131
