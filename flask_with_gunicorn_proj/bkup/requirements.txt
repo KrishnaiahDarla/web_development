@@ -30,7 +30,7 @@ coreapi==2.3.3
 coreschema==0.0.4
 coverage==4.5.1
 crypto==1.4.1
-cryptography==2.4.2
+cryptography==3.2
 develop==0.1.4
 Django==2.1.4
 django-debug-toolbar==1.10.1
