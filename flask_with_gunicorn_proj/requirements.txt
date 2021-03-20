@@ -9,7 +9,7 @@ future==0.17.1
 GitPython==0.3.6
 gunicorn==19.9.0
 invoke==1.2.0
-Jinja2==2.10
+Jinja2==2.11.3
 pipenv==2018.10.13
 psycopg2-binary==2.7.6.1
 python-dotenv==0.10.1
