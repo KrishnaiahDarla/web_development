@@ -21,7 +21,7 @@ repo==0.1.0
 requests==2.20.0
 requests-oauthlib==1.0.0
 requests-toolbelt==0.8.0
-rsa==3.4.2
+rsa==4.1
 sqlparse==0.2.4
 tzlocal==1.5.1
 uritemplate==3.0.0
