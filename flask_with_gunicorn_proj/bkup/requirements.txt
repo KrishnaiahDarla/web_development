@@ -135,7 +135,7 @@ robotframework-requests==0.5.0
 robotframework-selenium2library==3.0.0
 robotframework-seleniumlibrary==3.3.0
 robotframework-sshlibrary==3.2.1
-rsa==3.4.2
+rsa==4.7
 ruamel.appconfig==0.5.4
 ruamel.showoutput==0.1.7
 ruamel.std.argparse==0.8.1
